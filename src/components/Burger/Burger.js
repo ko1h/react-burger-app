@@ -1,8 +1,16 @@
-import Rect from 'react';
+import React from 'react';
+
+import classes from './Burger.css';
+import BurgerIngedient from './BurgerIngredient/BurgerIngredient';
 
 const burger = (props) => {
   return(
-    <div></div>
+    <div className={classes.Burger}>
+      <BurgerIngedient type="bread-top" />
+      <BurgerIngedient type="cheese" />
+      <BurgerIngedient type="meat" />
+      <BurgerIngedient type="bread-bottom" />
+    </div>
   );
 };
 
